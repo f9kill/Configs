@@ -11,18 +11,15 @@
 		[separator]
 		[submenu] (Acessórios)
 			[exec] (Ranger) {xterm -e ranger}
-			[exec] (Thunar) {thunar}
 			[exec] (Xcalc) {xcalc}
 		[end]
 		[submenu] (Editores)
 			[exec] (Nano) {xterm -e nano}
 			[exec] (Vim) {xterm -e vim}
-			[exec] (Mousepad) {mousepad}
-			[exec] (Geany) {geany}
+			[exec] (Leafpad) {leafpad}
 		[end]
 		[submenu] (Educação)
 			[exec] (Anki) {anki}
-			[exec] (Klavaro) {klavaro}
 		[end]
 		[submenu] (Office )
 			[exec] (Libreoffice Writer) {libreoffice --writer}
@@ -58,7 +55,7 @@
 		[end]
 		[submenu] (Sistema)
 			[exec] (Xterm) {xterm}
-			[exec] (Urxvt) {urxvt}
+			[exec] (Sakura) {sakura}
 			[exec] (Lxappearence) {lxappearance}
 			[exec] (VirtualBox) {virtualbox}
 			[exec] (Nvidia Settings) {nvidia-settings}
