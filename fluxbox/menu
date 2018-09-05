@@ -10,8 +10,9 @@
 		[end]
 		[separator]
 		[submenu] (Acessórios)
-			[exec] (Ranger) {xterm -e ranger}
+			[exec] (Ranger) {xterm -bg black -fg white -e ranger}
 			[exec] (Xcalc) {xcalc}
+			[exec] (Epdfview) {epdfview}
 		[end]
 		[submenu] (Editores)
 			[exec] (Nano) {xterm -e nano}
@@ -27,7 +28,6 @@
 			[exec] (Libreoffice Impress) {libreoffice --impress}
 			[exec] (Libreoffice math) {libreoffice --math}
 			[exec] (Libreoffice Base) {libreoffice --base}
-			
 		[end]
 		[submenu] (Internet)
 			[exec] (Firefox) {firefox}
@@ -58,12 +58,12 @@
 			[exec] (Sakura) {sakura}
 			[exec] (Lxappearence) {lxappearance}
 			[exec] (VirtualBox) {virtualbox}
+			[exec] (Lxrandr) {lxrandr}
 			[exec] (Nvidia Settings) {nvidia-settings}
 		[end]
 		[submenu] (Pentest)
 			[submenu] (Cracker)
 				[exec] (John) {xterm -e 'sudo john -h; zsh'}
-				[exec] (Hashcat) {xterm -e 'hashcat -h; zsh'}
 				[exec] (Hydra) {xterm -e 'hydra -h; zsh'}
 			[end]
 			[submenu] (Crypto)
