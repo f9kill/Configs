@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal emulator">
+    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+  </item>
+  <item label="Web browser">
+    <action name="Execute"><execute>x-www-browser</execute></action>
+  </item>
+  <item label="GmRun">
+    <action name="Execute"><execute>gmrun</execute></action>
+  </item>
+
+  <!-- This requires the presence of the 'openbox-menu' package to work -->
+  <menu id="/Debian" />
+
+  <separator />
+
+  <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
+
+  <separator />
+
+    <menu id="office" label="Office">
+      <item label="Libreoffice Writer">
+        <action name="Execute"><execute>libreoffice --writer</execute></action>
+      </item>
+      <item label="Libreoffice Calc">
+        <action name="Execute"><execute>libreoffice --calc</execute></action>
+      </item>
+      <item label="Libreoffice Impress">
+        <action name="Execute"><execute>libreoffice --impress</execute></action>
+      </item>
+      <item label="Libreoffice Math">
+        <action name="Execute"><execute>libreoffice --math</execute></action>
+      </item>
+      <item label="Libreoffice Draw">
+        <action name="Execute"><execute>libreoffice --draw</execute></action>
+      </item>
+      <item label="Libreoffice Base">
+        <action name="Execute"><execute>libreoffice --base</execute></action>
+      </item>
+      <item label="Epdfview">
+        <action name="Execute"><execute>epdfview</execute></action>
+      </item>
+    </menu>
+    <menu id="development" label="Development">
+      <item label="Sublime Text3">
+        <action name="Execute"><execute>sublime-text</execute></action>
+      </item>
+    </menu>
+    <menu id="graphicd" label="Graphicd">
+      <item label="Xsane">
+        <action name="Execute"><execute>xsane</execute></action>
+      </item>
+      <item label="GIMP">
+        <action name="Execute"><execute>gimp</execute></action>
+      </item>
+      <item label="Inkscape">
+        <action name="Execute"><execute>inkscape</execute></action>
+      </item>
+      <item label="Nitrogen">
+        <action name="Execute"><execute>nitrogen</execute></action>
+      </item>
+    </menu>
+    <menu id="internet" label="Internet">
+      <item label="Firefox ESR">
+        <action name="Execute"><execute>firefox-esr</execute></action>
+      </item>
+      <item label="Firefox Dev">
+        <action name="Execute"><execute>firefox-dev</execute></action>
+      </item>
+      <item label="Chromium">
+        <action name="Execute"><execute>chromium</execute></action>
+      </item>
+      <item label="Tor browser">
+        <action name="Execute"><execute>tor-browser</execute></action>
+      </item>
+      <item label="Thunderbird">
+        <action name="Execute"><execute>thunderbird</execute></action>
+      </item>
+      <item label="Mutt">
+        <action name="Execute"><execute>xterm -e mutt</execute></action>
+      </item>
+      <item label="Deluge">
+        <action name="Execute"><execute>deluge</execute></action>
+      </item>
+      <item label="Filezilla">
+        <action name="Execute"><execute>filezilla</execute></action>
+      </item>
+      <item label="Telegram">
+        <action name="Execute"><execute>/opt/Telegram/Telegram</execute></action>
+      </item>
+    </menu>
+    <menu id="games" label="Games">
+      <item label="RetroArch">
+        <action name="Execute"><execute>retroarch</execute></action>
+      </item>
+    </menu>
+    <menu id="system" label="System">
+      <item label="">
+        <action name="Execute"><execute></execute></action>
+      </item>
+    </menu>
+    <menu id="multimedia" label="Multimedia">
+      <item label="VLC">
+        <action name="Execute"><execute>vlc</execute></action>
+      </item>
+      <item label="MPV">
+        <action name="Execute"><execute>mpv</execute></action>
+      </item>
+      <item label="Audacity">
+        <action name="Execute"><execute>audacity</execute></action>
+      </item>
+      <item label="Moc">
+        <action name="Execute"><execute>xterm -e mocp</execute></action>
+      </item>
+      <item label="SimpleScreenRecorder">
+        <action name="Execute"><execute>simplescreenrecorder</execute></action>
+      </item>
+    </menu>
+    <menu id="utilities" label="Utilities">
+      <item label="Ranger">
+        <action name="Execute"><execute>xterm -bg black -fg white -e ranger</execute></action>
+      </item>
+      <item label="Xcalc">
+        <action name="Execute"><execute>xcalc</execute></action>
+      </item>
+      <item label="Xarchiver">
+        <action name="Execute"><execute>xarchiver</execute></action>
+      </item>
+      <item label="Scrot">
+        <action name="Execute"><execute>scrot</execute></action>
+      </item>
+      <item label="KeepassX">
+        <action name="Execute"><execute>keepassx</execute></action>
+      </item>
+      <item label="Veracrypt">
+        <action name="Execute"><execute>veracrypt</execute></action>
+      </item>
+    </menu>
+    <menu id="settings" label="Settings">
+      <item label="Xterm">
+        <action name="Execute"><execute>xterm</execute></action>
+      </item>
+      <item label="Sakura">
+        <action name="Execute"><execute>sakura</execute></action>
+      </item>
+      <item label="Lxappearence">
+        <action name="Execute"><execute>lxappearence</execute></action>
+      </item>
+      <item label="Nvidia Settings">
+        <action name="Execute"><execute>nvidia-settings</execute></action>
+      </item>
+      <item label="VirtualBox">
+        <action name="Execute"><execute>virtualbox</execute></action>
+      </item>
+      <item label="Tint2 conf">
+        <action name="Execute"><execute>tint2conf</execute></action>
+      </item>
+    </menu>
+    <menu id="pentest" label="Pentest">
+    </menu>
+
+  <separator />
+
+  <item label="ObConf">
+    <action name="Execute"><execute>obconf</execute></action>
+  </item>
+  <item label="Reconfigure">
+    <action name="Reconfigure" />
+  </item>
+  <item label="Restart">
+    <action name="Restart" />
+  </item>
+  <separator />
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+</menu>
+
+</openbox_menu>
