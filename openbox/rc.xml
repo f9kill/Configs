@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
-
-<!--
+  <!--
 [Super] .......: W
 [Alt] .........: A
 [Ctrl] ........: C
@@ -12,38 +11,37 @@
 [Esc] .........: Escape
 
 ========================================================
-Atalho					|		Descrição
+Atalho					      |		Descrição
 ========================================================
-[Super]+[PgUp]			| Deslocar janela para cima.
-[Super]+[PgDown]		| Deslocar janela para baixo.
-[Super]+[Right]			| Deslocar janela para direita.
-[Super]+[Left]			| Deslocar janela para esquerda.
-[Super]+[Up]			| Maximiza/Unmaximiza janela.
-[Super]+[Down]			| Minimiza janela.
-[Super]+[m]				| Esconde/Mostra todas as janelas.
-[Super]+[a]				| Esconde/Mostra decoração da janela.
-[Super]+[F7]			| Mover janela.
-[Super]+[F8]			| Redimensionar janela.
-[Super]+[Tab]			| Mostra todas as janelas dos desktops.
-[Alt]+[F4]				| Fechar janela.
-						|
-[Super]+[F1]			| Ir para desktop 1.
-[Super]+[F2]			| Ir para desktop 2.
-[Super]+[F3]			| Ir para desktop 3.
-[Super]+[F4]			| Ir para desktop 4.
+[Super]+[PgUp]  			| Deslocar janela para cima.
+[Super]+[PgDown]  		| Deslocar janela para baixo.
+[Super]+[Right] 			| Deslocar janela para direita.
+[Super]+[Left]  	 		| Deslocar janela para esquerda.
+[Super]+[Up]          | Maximiza/Unmaximiza janela.
+[Super]+[Down]      	| Minimiza janela.
+[Super]+[m]           | Esconde/Mostra todas as janelas.
+[Super]+[a]           | Esconde/Mostra decoração da janela.
+[Super]+[F7]          | Mover janela.
+[Super]+[F8]    			| Redimensionar janela.
+[Super]+[Tab]   			| Mostra todas as janelas dos desktops.
+[Alt]+[F4]    				| Fechar janela.
+          						|
+[Super]+[F1]    			| Ir para desktop 1.
+[Super]+[F2]    			| Ir para desktop 2.
+[Super]+[F3]    			| Ir para desktop 3.
+[Super]+[F4]    			| Ir para desktop 4.
 [Ctrl]+[Alt]+[Right]	| Ir para desktop da direita.
 [Ctrl]+[Alt]+[Left]		| Ir para desktop da esquerda.
-						|
-[Super]+[Enter]			| Abrir terminal.
-[Alt]+[F2]				| Abrir caixa de dialogo.
-[Print]					| Tira screenshot da tela.
-[Alt]+[Print]			| Tira screenshot da janela atual.
+						          |
+[Super]+[Enter]			  | Abrir terminal.
+[Alt]+[F2]				    | Abrir caixa de dialogo.
+[Print]					      | Tira screenshot da tela.
+[Alt]+[Print]			    | Tira screenshot da janela atual.
 
 Referências:
 http://openbox.org/wiki/Help:Actions
 https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde-e-openbox
 -->
-
   <resistance>
     <strength>10</strength>
     <screen_edge_strength>20</screen_edge_strength>
@@ -83,9 +81,8 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
        following: 'Mouse' - where the mouse is, or
                   'Active' - where the active window is -->
   </placement>
-
   <theme>
-    <name>Syscrash</name>
+    <name>blackarch</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -101,20 +98,20 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
     <animateIconify>yes</animateIconify>
     <font place="ActiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>7</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="InactiveWindow">
       <name>sans</name>
-      <size>8</size>
+      <size>7</size>
       <!-- font size in points -->
-      <weight>bold</weight>
+      <weight>Bold</weight>
       <!-- 'bold' or 'normal' -->
-      <slant>normal</slant>
+      <slant>Normal</slant>
       <!-- 'italic' or 'normal' -->
     </font>
     <font place="MenuHeader">
@@ -154,7 +151,6 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
       <!-- 'italic' or 'normal' -->
     </font>
   </theme>
-
   <desktops>
     <!-- this stuff is only used at startup, pagers allow you to change them
        during a session
@@ -220,13 +216,12 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-
-<!-- 
+  <!-- 
 ####################################################################
 Atalhos do Teclado
 ####################################################################
 -->
-<keyboard>
+  <keyboard>
     <keybind key="W-Return">
       <action name="Execute">
         <command>sakura</command>
@@ -237,89 +232,89 @@ Atalhos do Teclado
         <command>gmrun</command>
       </action>
     </keybind>
-	<!-- Esconde/Mostra decoração da janela -->
-	<keybind key="W-a">
-		<action name="ToggleDecorations"/>
-	</keybind>
-	<!-- Redimensionar janela -->
-	<keybind key="W-F8">
-		<action name="Resize"/>
-	</keybind>
-	<!-- Mover janelas -->
-	<keybind key="W-F7">
-		<action name="Move"/>
-	</keybind>
-	<!-- Super+Left = Dock undecorated left -->
-	<keybind key="W-Left">
-		<action name="Unmaximize"/>
-		<action name="Undecorate"/>
-		<action name="MoveResizeTo">
-			<x>0</x>
-			<y>0</y>
-			<height>100%</height>
-			<width>50%</width>
-		</action>
-	</keybind>
-	<!-- Super+Right = Dock undecorated right -->  
-	<keybind key="W-Right">
-		<action name="Unmaximize"/>
-		<action name="Undecorate"/>
-		<action name="MoveResizeTo">
-			<x>50%</x>
-			<y>0</y>
-			<height>100%</height>
-			<width>50%</width>
-		</action>
-	</keybind>
-	<!-- Super+Up = Dock undecorated up -->  
-	<keybind key="W-Prior">
-		<action name="Unmaximize"/>
-		<action name="Undecorate"/>
-		<action name="MoveResizeTo">
-			<x>0</x>
-			<y>0</y>
-			<height>50%</height>
-			<width>100%</width>
-		</action>
-	</keybind>
-	<!-- Super+Down = Dock undecorated down -->  
-	<keybind key="W-Next">
-		<action name="Unmaximize"/>
-		<action name="Undecorate"/>
-		<action name="MoveResizeTo">
-			<x>0</x>
-			<y>50%</y>
-			<height>50%</height>
-			<width>100%</width>
-		</action>
-	</keybind>
-	<!-- Maximize/Unmaximize a janela  -->
-	<keybind key="W-Up">
-		<action name="if">
-			<query target="default">
-				<maximized>yes</maximized>
-			</query>
-			<then>
-				<action name="Decorate"/>
-				<action name="Unmaximize"/>
-			</then>
-			<else>
-				<action name="Decorate"/>
-				<action name="Maximize"/>
-			</else>
-		</action>
-	</keybind>
-	<!-- Minimize -->
-	<keybind key="W-Down">
-		<action name="Decorate"/>
-		<action name="Iconify"/>
-	</keybind>
-	<!-- Mostra todas as janelas dos desktops -->
-	<keybind key="W-Tab">
-	  <action name="ShowMenu">
-		<menu>client-list-combined-menu</menu>
-	  </action>
-	</keybind>
+    <!-- Esconde/Mostra decoração da janela -->
+    <keybind key="W-a">
+      <action name="ToggleDecorations"/>
+    </keybind>
+    <!-- Redimensionar janela -->
+    <keybind key="W-F8">
+      <action name="Resize"/>
+    </keybind>
+    <!-- Mover janelas -->
+    <keybind key="W-F7">
+      <action name="Move"/>
+    </keybind>
+    <!-- Super+Left = Dock undecorated left -->
+    <keybind key="W-Left">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <height>100%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <!-- Super+Right = Dock undecorated right -->
+    <keybind key="W-Right">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <height>100%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <!-- Super+Up = Dock undecorated up -->
+    <keybind key="W-Prior">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <height>50%</height>
+        <width>100%</width>
+      </action>
+    </keybind>
+    <!-- Super+Down = Dock undecorated down -->
+    <keybind key="W-Next">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <height>50%</height>
+        <width>100%</width>
+      </action>
+    </keybind>
+    <!-- Maximize/Unmaximize a janela  -->
+    <keybind key="W-Up">
+      <action name="if">
+        <query target="default">
+          <maximized>yes</maximized>
+        </query>
+        <then>
+          <action name="Decorate"/>
+          <action name="Unmaximize"/>
+        </then>
+        <else>
+          <action name="Decorate"/>
+          <action name="Maximize"/>
+        </else>
+      </action>
+    </keybind>
+    <!-- Minimize -->
+    <keybind key="W-Down">
+      <action name="Decorate"/>
+      <action name="Iconify"/>
+    </keybind>
+    <!-- Mostra todas as janelas dos desktops -->
+    <keybind key="W-Tab">
+      <action name="ShowMenu">
+        <menu>client-list-combined-menu</menu>
+      </action>
+    </keybind>
     <chainQuitKey>C-g</chainQuitKey>
     <!-- Keybindings for desktop switching -->
     <keybind key="C-A-Left">
@@ -482,8 +477,7 @@ Atalhos do Teclado
       </action>
     </keybind>
   </keyboard>
-
-<!-- 
+  <!-- 
 ####################################################################
 Atalhos com Mouse
 ####################################################################
@@ -501,35 +495,35 @@ Atalhos com Mouse
     <!-- Set this to TRUE to move the mouse pointer across the desktop when
        switching due to hitting the edge of the screen -->
     <context name="Frame">
-      <mousebind button="A-Left" action="Press">
+      <mousebind button="W-Left" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
       </mousebind>
-      <mousebind button="A-Left" action="Click">
+      <mousebind button="W-Left" action="Click">
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Left" action="Drag">
+      <mousebind button="W-Left" action="Drag">
         <action name="Move"/>
       </mousebind>
-      <mousebind button="A-Right" action="Press">
+      <mousebind button="W-Right" action="Press">
         <action name="Focus"/>
         <action name="Raise"/>
         <action name="Unshade"/>
       </mousebind>
-      <mousebind button="A-Right" action="Drag">
+      <mousebind button="W-Right" action="Drag">
         <action name="Resize"/>
       </mousebind>
-      <mousebind button="A-Middle" action="Press">
+      <mousebind button="W-Middle" action="Press">
         <action name="Lower"/>
         <action name="FocusToBottom"/>
         <action name="Unfocus"/>
       </mousebind>
-      <mousebind button="A-Up" action="Click">
+      <mousebind button="W-Up" action="Click">
         <action name="GoToDesktop">
           <to>previous</to>
         </action>
       </mousebind>
-      <mousebind button="A-Down" action="Click">
+      <mousebind button="W-Down" action="Click">
         <action name="GoToDesktop">
           <to>next</to>
         </action>
@@ -822,7 +816,6 @@ Atalhos com Mouse
       </mousebind>
     </context>
   </mouse>
-
   <menu>
     <!-- You can specify more than one menu file in here and they are all loaded,
        just don't make menu ids clash or, well, it'll be kind of pointless -->

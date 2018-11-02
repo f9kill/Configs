@@ -20,4 +20,4 @@ tint2 &
 volumeicon &
 compton -C &
 nitrogen --restore &
-conky &
+# conky &
