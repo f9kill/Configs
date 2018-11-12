@@ -7,10 +7,10 @@
 
 <menu id="root-menu" label="Openbox 3">
   <item label="Terminal emulator">
-    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+    <action name="Execute"><execute>sakura</execute></action>
   </item>
   <item label="Web browser">
-    <action name="Execute"><execute>x-www-browser</execute></action>
+    <action name="Execute"><execute>firefox</execute></action>
   </item>
   <item label="GmRun">
     <action name="Execute"><execute>gmrun</execute></action>
@@ -44,7 +44,7 @@
       <item label="Libreoffice Base">
         <action name="Execute"><execute>libreoffice --base</execute></action>
       </item>
-      <item label="Epdfview">
+      <item label="EpdfView">
         <action name="Execute"><execute>epdfview</execute></action>
       </item>
     </menu>
@@ -68,11 +68,8 @@
       </item>
     </menu>
     <menu id="internet" label="Internet">
-      <item label="Firefox ESR">
-        <action name="Execute"><execute>firefox-esr</execute></action>
-      </item>
-      <item label="Firefox Dev">
-        <action name="Execute"><execute>firefox-dev</execute></action>
+      <item label="Firefox">
+        <action name="Execute"><execute>firefox</execute></action>
       </item>
       <item label="Chromium">
         <action name="Execute"><execute>chromium</execute></action>
@@ -130,14 +127,11 @@
       <item label="Xcalc">
         <action name="Execute"><execute>xcalc</execute></action>
       </item>
-      <item label="Xarchiver">
-        <action name="Execute"><execute>xarchiver</execute></action>
-      </item>
       <item label="Scrot">
         <action name="Execute"><execute>scrot</execute></action>
       </item>
       <item label="KeepassX">
-        <action name="Execute"><execute>keepassx</execute></action>
+        <action name="Execute"><execute>keepassx2</execute></action>
       </item>
       <item label="Veracrypt">
         <action name="Execute"><execute>veracrypt</execute></action>
@@ -150,8 +144,8 @@
       <item label="Sakura">
         <action name="Execute"><execute>sakura</execute></action>
       </item>
-      <item label="Lxappearence">
-        <action name="Execute"><execute>lxappearence</execute></action>
+      <item label="Lxappearance">
+        <action name="Execute"><execute>lxappearance</execute></action>
       </item>
       <item label="Nvidia Settings">
         <action name="Execute"><execute>nvidia-settings</execute></action>
