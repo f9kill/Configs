@@ -21,10 +21,6 @@
 
   <separator />
 
-  <menu id="applications-menu" label="Applications" execute="/usr/bin/obamenu"/>
-
-  <separator />
-
     <menu id="office" label="Office">
       <item label="Libreoffice Writer">
         <action name="Execute"><execute>libreoffice --writer</execute></action>
