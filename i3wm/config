@@ -8,7 +8,7 @@
 # Tecla principal.
 #  Mod1 -> Alt
 #  Mod4 -> Win
-set $mod Mod1
+set $mod Mod4
 
 # Fonte padrão do i3wm.
 font pango:monospace 8
@@ -17,8 +17,8 @@ font pango:monospace 8
 floating_modifier $mod
 
 # Configurar estilo das bordas <normal/1pixel/pixel xx/none/pixel>
-new_window pixel 2
-new_float pixel 2
+new_window pixel 5
+new_float pixel 5
 
 # Esconder bordas
 hide_edge_borders none
@@ -53,7 +53,7 @@ bindsym $mod+l exec i3lock -c 000000
 
 # Mudança de bordas
 bindsym $mod+u border none
-bindsym $mod+y border pixel 2
+bindsym $mod+y border pixel 5
 bindsym $mod+n border normal
 
 # Teclas para <Fechar/Reload/Restart/Sair> do gerenciador.
@@ -165,9 +165,9 @@ bar {
 		background #000000
 		statusline #00FF00
 #					Contorno	Fundo		Fonte
-		focused_workspace	#000000		#00FF00		#FFFFFF
+		focused_workspace	#00754b		#00754b		#FFFFFF
 		active_workspace	#000000		#808380		#FFFFFF
-		inactive_workspace	#00FF00		#000000		#00FF00
+		inactive_workspace	#00754b		#000000		#FFFFFF
 		urgent_workspace	#FFFFFF		#FF0000		#000000
   }
 }
@@ -177,7 +177,7 @@ bar {
 # ================================================================
 
 #			Border		Background	Font		Indicador
-client.focused		#808380		#00FF00		#FFFFFF		#000000
+client.focused		#00754b		#00754b		#FFFFFF		#00754b
 client.focused_inactive	#1E1E1E		#434745		#FFFFFF
 client.unfocused	#1E1E1E		#434745		#FFFFFF
 client.urgent		#FF0000		#FF0000		#FFFFFF

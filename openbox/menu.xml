@@ -7,7 +7,7 @@
 
 <menu id="root-menu" label="Openbox 3">
   <item label="Terminal emulator">
-    <action name="Execute"><execute>sakura</execute></action>
+    <action name="Execute"><execute>urxvt</execute></action>
   </item>
   <item label="Web browser">
     <action name="Execute"><execute>firefox</execute></action>
@@ -15,9 +15,17 @@
   <item label="GmRun">
     <action name="Execute"><execute>gmrun</execute></action>
   </item>
-
-  <!-- This requires the presence of the 'openbox-menu' package to work -->
-  <menu id="/Debian" />
+  <menu id="shells" label="Shells">
+    <item label="Green">
+      <action name="Execute"><execute>urxvt -bg [85]#000000 -fg green</execute></action>
+    </item>
+    <item label="Red">
+      <action name="Execute"><execute>urxvt -bg [85]#000000 -fg red</execute></action>
+    </item>
+    <item label="Yellow">
+      <action name="Execute"><execute>urxvt -bg [85]#000000 -fg yellow</execute></action>
+    </item>
+  </menu>
 
   <separator />
 
@@ -137,8 +145,8 @@
       <item label="Xterm">
         <action name="Execute"><execute>xterm</execute></action>
       </item>
-      <item label="Sakura">
-        <action name="Execute"><execute>sakura</execute></action>
+      <item label="Rxvt">
+        <action name="Execute"><execute>urxvt</execute></action>
       </item>
       <item label="Lxappearance">
         <action name="Execute"><execute>lxappearance</execute></action>
