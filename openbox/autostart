@@ -1,5 +1,18 @@
+# Carrega a barra de tarefas tint2.
 tint2 &
+
+# Carrega o applet do NetworkManager.
 nm-applet &
+
+# Carrega o volumeicon para controlar o volume.
 volumeicon &
+
+# Ajustar os efeitos de sombra e trasnparencia. 
+#compton -cCGfF -O 200 -I 200 -D2 -m 0.88 &
+compton -C -O 200 -I 200 -D2 &
+
+# Script para ajustar monitores com xrandr.
+/opt/Scripts/hh-display
+
+# Coarregar configurações de papel de parede.
 nitrogen --restore &
-compton -cCGfF -o 0.38 -O 200 -I 200 -t 0 -l 0 -r 3 -D2 -m 0.88 &

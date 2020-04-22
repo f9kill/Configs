@@ -12,33 +12,38 @@
 [Esc] .........: Escape
 
 ================================================================================
- Atalho				| Descrição
+ Atalho                 | Descrição
 ================================+===============================================
-				|
+                        |
 [Super]+[PgUp]  		| Deslocar janela para cima.
 [Super]+[PgDown]  		| Deslocar janela para baixo.
 [Super]+[Right] 		| Deslocar janela para direita.
 [Super]+[Left]  	 	| Deslocar janela para esquerda.
-[Super]+[Up]          		| Maximiza/Unmaximiza janela.
-[Super]+[Down]      		| Minimiza janela.
-[Super]+[m]           		| Esconde/Mostra todas as janelas.
-[Super]+[a]           		| Esconde/Mostra decoração da janela.
-[Super]+[F7]          		| Mover janela.
+[Super]+[Up]          	| Maximiza/Unmaximiza janela.
+[Super]+[Down]      	| Minimiza janela.
+[Suoer]+[Shift]+[1]     | Mover para canto superior esquerdo.
+[Suoer]+[Shift]+[2]     | Mover para canto superior direito.
+[Suoer]+[Shift]+[3]     | Mover para canto inferior esquerdo.
+[Suoer]+[Shift]+[4]     | Mover para canto inferior direito.
+[Suoer]+[Shift]+[0]     | Mover para o centro da tela..
+[Super]+[m]           	| Esconde/Mostra todas as janelas.
+[Super]+[a]           	| Esconde/Mostra decoração da janela.
+[Super]+[F7]          	| Mover janela.
 [Super]+[F8]    		| Redimensionar janela.
 [Super]+[Tab]   		| Mostra todas as janelas dos desktops.
 [Alt]+[F4]    			| Fechar janela.
-          			|
+                        |
 [Super]+[F1]    		| Ir para desktop 1.
 [Super]+[F2]    		| Ir para desktop 2.
 [Super]+[F3]    		| Ir para desktop 3.
 [Super]+[F4]    		| Ir para desktop 4.
-[Ctrl]+[Alt]+[Right]		| Ir para desktop da direita.
+[Ctrl]+[Alt]+[Right]    | Ir para desktop da direita.
 [Ctrl]+[Alt]+[Left]		| Ir para desktop da esquerda.
-				|
+                        |
 [Super]+[Enter]			| Abrir terminal.
-[Alt]+[F2]			| Abrir caixa de dialogo.
-[Print]				| Tira screenshot da tela.
-[Alt]+[Print]			| Tira screenshot da janela atual.
+[Alt]+[F2]              | Abrir caixa de dialogo.
+[Print]                 | Tira screenshot da tela.
+[Alt]+[Print]           | Tira screenshot da janela atual.
 
 Referências:
 http://openbox.org/wiki/Help:Actions
@@ -85,7 +90,7 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
                   'Active' - where the active window is -->
   </placement>
   <theme>
-    <name>simples</name>
+    <name>simples3</name>
     <titleLayout>LIMC</titleLayout>
     <!--
       available characters are NDSLIMC, each can occur at most once.
@@ -219,14 +224,16 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
     <moveButton>Middle</moveButton>
     <!-- 'Left', 'Middle', 'Right' -->
   </dock>
-  <!-- ===========================================================================
+  <!--
+===========================================================================
  Atalhos do Teclado
-============================================================================ -->
+===========================================================================
+-->
   <keyboard>
     <!-- Abre terminais -->
     <keybind key="W-Return">
       <action name="Execute">
-        <command>urxvt</command>
+        <command>rxvt</command>
       </action>
     </keybind>
     <keybind key="W-1">
@@ -309,6 +316,61 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
         <y>50%</y>
         <height>50%</height>
         <width>100%</width>
+      </action>
+    </keybind>
+    <!-- Super+Insert = Dock undecorated Quadrant 1 -->
+    <keybind key="W-S-1">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>0</y>
+        <height>50%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <!-- Super+Home = Dock undecorated Quadrant 2 -->
+    <keybind key="W-S-2">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>0</y>
+        <height>50%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <!-- Super+Delete = Dock undecorated Quadrant 3 -->
+    <keybind key="W-S-3">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>0</x>
+        <y>50%</y>
+        <height>50%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <!-- Super+End = Dock undecorated Quadrant 4 -->
+    <keybind key="W-S-4">
+      <action name="Unmaximize"/>
+      <action name="Undecorate"/>
+      <action name="MoveResizeTo">
+        <x>50%</x>
+        <y>50%</y>
+        <height>50%</height>
+        <width>50%</width>
+      </action>
+    </keybind>
+    <!-- Super+0 = Restore to center, half-sized -->
+    <keybind key="W-S-0">
+      <action name="Unmaximize"/>
+      <action name="Decorate"/>
+      <action name="MoveResizeTo">
+        <x>center</x>
+        <y>center</y>
+        <height>50%</height>
+        <width>50%</width>
       </action>
     </keybind>
     <!-- Maximize/Unmaximize a janela  -->
@@ -434,10 +496,16 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
         <menu>client-menu</menu>
       </action>
     </keybind>
-    <!-- Take a screenshot of the current window with scrot when Alt+Print are pressed -->
+    <!-- Take a screen
+    shot of the current window with scrot when Alt+Print are pressed -->
     <keybind key="A-Print">
       <action name="Execute">
-        <command>scrot -s</command>
+        <command>scrot -bu</command>
+      </action>
+    </keybind>
+    <keybind key="Print">
+      <action name="Execute">
+        <command>scrot</command>
       </action>
     </keybind>
     <!-- Keybindings for window switching -->
@@ -508,9 +576,11 @@ https://paulodev.com.br/pt/blog/linux/77-atalhos-para-posicionar-janelas-no-lxde
       </action>
     </keybind>
   </keyboard>
-  <!-- =========================================================================== 
+  <!--
+=========================================================================== 
  Atalhos com Mouse
-============================================================================ -->
+===========================================================================
+-->
   <mouse>
     <dragThreshold>1</dragThreshold>
     <!-- number of pixels the mouse must move before a drag begins -->

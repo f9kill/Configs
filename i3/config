@@ -2,7 +2,7 @@
 # Data: 13-set-2017
 
 # ================================================================
-#		Configuração geral
+#        Configuração geral
 # ================================================================
 
 # Tecla principal.
@@ -25,20 +25,21 @@ hide_edge_borders none
 
 
 # ================================================================
-#		Programas iniciados automaticamente
+#        Programas iniciados automaticamente
 # ================================================================
 
 # exec --no-startup-id feh --bg-scale /opt/imagens/wallpaper.jpg
 # exec --no-startup-id xsetroot -solid "#333333"
 # exec_always ~/.ramdom_wallpaper.sh
-# exec --no-startup-id nm-applet
+exec --no-startup-id nm-applet
 exec --no-startup-id volumeicon
 exec --no-startup-id compton -C &
-exec --no-startup-id wicd-client &
+# exec --no-startup-id wicd-client &
+exec --no-startup-id hh-display
 exec --no-startup-id nitrogen --restore &
 
 # ================================================================
-#		Teclas de atalho (Programas)
+#        Teclas de atalho (Programas)
 # ================================================================
 
 #bindsym $mod+Return exec xterm -bg black -fg green -fa 'Hack' -fs 9
@@ -46,7 +47,7 @@ bindsym $mod+Return exec urxvt
 bindsym $mod+d exec dmenu_run
 
 # ================================================================
-#		Teclas de atalho (i3wm)
+#        Teclas de atalho (i3wm)
 # ================================================================
 # Bloquear tela
 bindsym $mod+l exec i3lock -c 000000
@@ -157,34 +158,40 @@ bindsym $mod+r mode "resize"
 
 # Barra superior.
 bar {
-        status_command i3status
-	position top
+    output primary
+    output DP-1
+    tray_output primary
+    font pango: inconsolata 12
+    separator_symbol " | "
+    status_command i3status
+    position top
 
-	colors {
-		separator #FFFFFF
-		background #000000
-		statusline #00FF00
-#					Contorno	Fundo		Fonte
-		focused_workspace	#00754b		#00754b		#FFFFFF
-		active_workspace	#000000		#808380		#FFFFFF
-		inactive_workspace	#00754b		#000000		#FFFFFF
-		urgent_workspace	#FFFFFF		#FF0000		#000000
+    colors {
+        separator  #FFFFFF
+        background #000000
+        statusline #00FF00
+
+#       <colorclass>        <border>       <background>   <text>
+        focused_workspace   #00754b        #00754b        #FFFFFF
+        active_workspace    #000000        #808380        #FFFFFF
+        inactive_workspace  #00754b        #000000        #FFFFFF
+        urgent_workspace    #FFFFFF        #FF0000        #000000
   }
 }
 
-# ================================================================
-#		Esquema de cores do i3wm
-# ================================================================
+# ==============================================================================
+#                   Esquema de cores do i3wm
+# ==============================================================================
 
-#			Border		Background	Font		Indicador
-client.focused		#00754b		#00754b		#FFFFFF		#00754b
-client.focused_inactive	#1E1E1E		#434745		#FFFFFF
-client.unfocused	#1E1E1E		#434745		#FFFFFF
-client.urgent		#FF0000		#FF0000		#FFFFFF
+#                       border      backgr.     indicator   child_border
+client.focused          #00754b     #00754b     #FFFFFF     #00754b
+client.focused_inactive #1E1E1E     #434745     #FFFFFF
+client.unfocused        #1E1E1E     #434745     #FFFFFF
+client.urgent           #FF0000     #FF0000     #FFFFFF
 
-# ================================================================
-#		Configuração de abertura de programas
-# ================================================================
+# ==============================================================================
+#                   Configuração de abertura de programas
+# ==============================================================================
 
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [class="GParted"] floating enable border normal

@@ -1,3 +1,24 @@
+!! Verde oceano
+!! #59FCB3 -> foreground window
+!! #2B976C -> background window
+!! 
+!! #59FCB3 -> fonte
+!! #040F0A -> fundo
+
+XTerm*background: black
+XTerm*foreground: white
+XTerm*pointerColor: green
+XTerm*pointerColorBackground: black
+XTerm*cursorColor: green
+XTerm*geometry: 90x25
+XTerm*faceName: Terminus:size=11:antalias=false	
+XTerm*colorBDMode: true
+! XTerm*scrollBar: True
+! XTerm*scrollbar.width: 8
+XTerm*saveLines: 4096
+XTerm*locate: True
+
+
 !! Tango color palette
 
 URxvt*cursorColor:        #8ae234
@@ -31,18 +52,17 @@ URxvt*color7:             #d3d7cf
 URxvt*color15: #eeeeec
 
 !! Cor da fonte e fundo transparente
-! URxvt.foreground:     #00FA9A
-! URxvt.background: [85]#000000
-URxvt.foreground:     #FFFFFF
+URxvt.foreground:     #EEEEEE
 URxvt.background: [85]#000000
 URxvt.depth: 32
 
 !! Fonte
-URxvt.font: xft:inconsolata:bold:pixelsize=14:antialias=true:hinting=false
-! URxvt.font: xft:monospace:bold:pixelsize=11:antialias=true:hinting=false
+! URxvt.font: xft:inconsolata:pixelsize=15:antialias=true:hinting=false
+URxvt.font: xft:monospace:pixelsize=13:antialias=true:hinting=false
+! URxvt.font: xft:terminus:pixelsize=13:antialias=true:hinting=false
 
 !! Tamanho da janela
-URxvt.geometry: 96x25
+URxvt.geometry: 90x22
 
 !! Barra de rolagem
 URxvt.scrollBar: false
