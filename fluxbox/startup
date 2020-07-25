@@ -1,7 +1,0 @@
-#!/bin/sh
-
-compton -cC &
-volumeicon &
-nm-applet &
-
-exec fluxbox
