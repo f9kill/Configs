@@ -11,51 +11,52 @@
 set $mod Mod4
 
 # Fonte padrão do i3wm.
-font pango:monospace 8
+font pango:Hack Nerd Font Mono 10
 
 # Tecla para movimentar janelas no modo flutuante.
 floating_modifier $mod
 
 # Configurar estilo das bordas <normal/1pixel/pixel xx/none/pixel>
-new_window pixel 5
-new_float pixel 5
+new_window pixel 2
+new_float pixel 2
 
 # Esconder bordas
 hide_edge_borders none
-
 
 # ================================================================
 #        Programas iniciados automaticamente
 # ================================================================
 
-# exec --no-startup-id feh --bg-scale /opt/imagens/wallpaper.jpg
-# exec --no-startup-id xsetroot -solid "#333333"
-# exec_always ~/.ramdom_wallpaper.sh
+exec --no-startup-id feh --bg-scale ~/Pictures/caveira_pixel.jpg
 exec --no-startup-id nm-applet
-exec --no-startup-id volumeicon
+#exec --no-startup-id volumeicon
 exec --no-startup-id compton -C &
-# exec --no-startup-id wicd-client &
 exec --no-startup-id hh-display
-exec --no-startup-id nitrogen --restore &
+#exec --no-startup-id nitrogen --restore &
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 # ================================================================
-#        Teclas de atalho (Programas)
+#        Teclas de atalho
 # ================================================================
 
-#bindsym $mod+Return exec xterm -bg black -fg green -fa 'Hack' -fs 9
+# Executa o terminal
 bindsym $mod+Return exec urxvt
+
+# Abre o menu de aplicativos
 bindsym $mod+d exec dmenu_run
 
-# ================================================================
-#        Teclas de atalho (i3wm)
-# ================================================================
-# Bloquear tela
-bindsym $mod+l exec i3lock -c 000000
+# Controla volume através do pulseaudio
+bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 0 +10%
+bindsym XF86AudioLowerVolume exec pactl set-sink-volume 0 -10%
+bindsym XF86AudioMute exec pactl set-sink-mute 0 toggle
+
+# Bloqueio de tela
+bindsym $mod+l exec /usr/bin/lock
 
 # Mudança de bordas
-bindsym $mod+u border none
-bindsym $mod+y border pixel 5
-bindsym $mod+n border normal
+# bindsym $mod+u border none
+# bindsym $mod+y border pixel 5
+# bindsym $mod+n border normal
 
 # Teclas para <Fechar/Reload/Restart/Sair> do gerenciador.
 bindsym $mod+Shift+q kill
@@ -157,27 +158,27 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Barra superior.
-bar {
-    output primary
-    output DP-1
-    tray_output primary
-    font pango: inconsolata 12
-    separator_symbol " | "
-    status_command i3status
-    position top
-
-    colors {
-        separator  #FFFFFF
-        background #000000
-        statusline #00FF00
-
+#bar {
+#    output primary
+#    output DP-1
+#    tray_output primary
+#    font pango: monospace 10
+#    separator_symbol " | "
+#    status_command i3status
+#    position top
+#
+#    colors {
+#        separator  #FFFFFF
+#        background #000000
+#        statusline #00FF00
+#
 #       <colorclass>        <border>       <background>   <text>
-        focused_workspace   #00754b        #00754b        #FFFFFF
-        active_workspace    #000000        #808380        #FFFFFF
-        inactive_workspace  #00754b        #000000        #FFFFFF
-        urgent_workspace    #FFFFFF        #FF0000        #000000
-  }
-}
+#        focused_workspace   #00754b        #00754b        #FFFFFF
+#        active_workspace    #000000        #808380        #FFFFFF
+#        inactive_workspace  #00754b        #000000        #FFFFFF
+#        urgent_workspace    #FFFFFF        #FF0000        #000000
+#  }
+#}
 
 # ==============================================================================
 #                   Esquema de cores do i3wm
@@ -193,10 +194,13 @@ client.urgent           #FF0000     #FF0000     #FFFFFF
 #                   Configuração de abertura de programas
 # ==============================================================================
 
-for_window [title="alsamixer"] floating enable border pixel 1
-for_window [class="GParted"] floating enable border normal
-for_window [class="Nitrogen"] floating enable sticky enable border normal
-for_window [class="Lxappearance"] floating enable border normal
+# Para descobrir o nome dos programas, use o comando "xprop WM_CLASS" e clique
+# na janela. 
+
+for_window [title="alsamixer"] floating enable
+for_window [class="GParted"] floating enable
+for_window [class="Nitrogen"] floating enable
+for_window [class="Lxappearance"] floating enable
 for_window [class="Xfburn"] floating enable
 for_window [class="Mousepad"] floating enable
 for_window [class="XCalc"] floating enable
@@ -206,3 +210,8 @@ for_window [class="Telegram"] floating enable
 for_window [class="Simplescreenrecorder"] floating enable
 for_window [class="smplayer"] floating enable
 for_window [class="Wicd-client"] floating enable
+for_window [class="mpv"] floating enable
+
+# Tamanho do espaçamento entre janelas
+gaps inner 10
+gaps outer 5
