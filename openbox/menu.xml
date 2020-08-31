@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://openbox.org/
+                file:///usr/share/openbox/menu.xsd">
+
+<menu id="root-menu" label="Openbox 3">
+  <item label="Terminal emulator">
+    <action name="Execute"><execute>urxvt</execute></action>
+  </item>
+  <item label="Web browser">
+    <action name="Execute"><execute>firefox</execute></action>
+  </item>
+  <item label="E-Mail">
+    <action name="Execute"><execute>thunderbird</execute></action>
+  </item>
+  <item label="File-Manager">
+    <action name="Execute"><execute>pcmanfm</execute></action>
+  </item>
+  <item label="GmRun">
+    <action name="Execute"><execute>gmrun</execute></action>
+  </item>
+
+  <separator />
+
+    <menu id="utilities" label="Utilities">
+        <item label="Leafpad">
+            <action name="Execute"><execute>leafpad</execute></action>
+        </item
+        <item label="Galculator">
+            <action name="Execute"><execute>galculator</execute></action>
+        </item
+        <item label="PcManFm">
+            <action name="Execute"><execute>pcmanfm</execute></action>
+        </item
+        <item label="Xfe">
+            <action name="Execute"><execute>xfe</execute></action>
+        </item
+        <item label="Ranger">
+            <action name="Execute"><execute>rxvt -e ranger</execute></action>
+        </item
+        <item label="Veracrypt">
+            <action name="Execute"><execute>veracrypt</execute></action>
+        </item
+        <item label="Keepassx2">
+            <action name="Execute"><execute>keepassx2</execute></action>
+        </item
+        <item label="gMTP">
+            <action name="Execute"><execute>gmtp</execute></action>
+        </item
+        <item label="Anki">
+            <action name="Execute"><execute>anki</execute></action>
+        </item
+        <item label="VirtualBox">
+            <action name="Execute"><execute>virtualbox</execute></action>
+        </item
+        <item label="xterm">
+            <action name="Execute"><execute>xterm</execute></action>
+        </item
+        <item label="urxvt">
+            <action name="Execute"><execute>urxvt</execute></action>
+        </item
+        <item label="qterminal">
+            <action name="Execute"><execute>qterminal</execute></action>
+        </item
+    </menu>
+    <menu id="developement" label="Developement">
+        <item label="Sublimer_Text">
+            <action name="Execute"><execute>sublime-text</execute></action>
+        </item
+        <item label="EDB">
+            <action name="Execute"><execute>edb</execute></action>
+        </item
+        <item label="Bless">
+            <action name="Execute"><execute>bless</execute></action>
+        </item
+    </menu>
+    <menu id="games" label="Games">
+        <item label="Mednaffe">
+            <action name="Execute"><execute>mednaffe</execute></action>
+        </item
+        <item label="Wesnoth">
+            <action name="Execute"><execute>wesnoth</execute></action>
+        </item
+    </menu>
+    <menu id="graphicd" label="Graphicd">
+        <item label="Gimp">
+            <action name="Execute"><execute>gimp</execute></action>
+        </item
+        <item label="Krita">
+            <action name="Execute"><execute>krita</execute></action>
+        </item
+        <item label="Inkscape">
+            <action name="Execute"><execute>inkscape</execute></action>
+        </item
+        <item label="Flameshot">
+            <action name="Execute"><execute>flameshot</execute></action>
+        </item
+        <item label="Gcolor2">
+            <action name="Execute"><execute>gcolor2</execute></action>
+        </item
+        <item label="ImageMagick">
+            <action name="Execute"><execute>rxvt -e display</execute></action>
+        </item
+        <item label="Nitrogen">
+            <action name="Execute"><execute>nitrogen</execute></action>
+        </item
+        <item label="Xsane">
+            <action name="Execute"><execute>xsane</execute></action>
+        </item
+    </menu>
+    <menu id="internet" label="Internet">
+        <item label="Firefox">
+            <action name="Execute"><execute>firefox</execute></action>
+        </item
+        <item label="Chromium">
+            <action name="Execute"><execute>chromium</execute></action>
+        </item
+        <item label="Brave">
+            <action name="Execute"><execute>brave-browser</execute></action>
+        </item
+        <item label="Palemoon">
+            <action name="Execute"><execute>palemoon</execute></action>
+        </item
+        <item label="Tor Browser">
+            <action name="Execute"><execute>tor-browser</execute></action>
+        </item
+        <item label="Thunderbird">
+            <action name="Execute"><execute>thunderbird</execute></action>
+        </item
+        <item label="Links2">
+            <action name="Execute"><execute>links2 -g</execute></action>
+        </item
+        <item label="Qbittorent">
+            <action name="Execute"><execute>qbittorrent</execute></action>
+        </item
+        <item label="Hexchat">
+            <action name="Execute"><execute>hexchat</execute></action>
+        </item
+        <item label="Filezzila">
+            <action name="Execute"><execute>filezzila</execute></action>
+        </item
+        <item label="Telegram">
+            <action name="Execute"><execute>/opt/Telegram/Telegram</execute></action>
+        </item
+        <item label="Microsoft Teams">
+            <action name="Execute"><execute>teams</execute></action>
+        </item
+    </menu>
+    <menu id="multimedia" label="Multimedia">
+        <item label="MPV">
+            <action name="Execute"><execute>urxvt -e mpv</execute></action>
+        </item
+        <item label="VLC">
+            <action name="Execute"><execute>vlc</execute></action>
+        </item
+        <item label="MOC">
+            <action name="Execute"><execute>urxvt -e mocp</execute></action>
+        </item
+        <item label="Audacious">
+            <action name="Execute"><execute>audacious</execute></action>
+        </item
+        <item label="Audacity">
+            <action name="Execute"><execute>Audacity</execute></action>
+        </item
+        <item label="Pavucontrol">
+            <action name="Execute"><execute>pavucontrol</execute></action>
+        </item
+        <item label="Sound Converter">
+            <action name="Execute"><execute>soundconverter</execute></action>
+        </item
+        <item label="Kdenlive">
+            <action name="Execute"><execute>kdenlive</execute></action>
+        </item
+        <item label="SimpleScreenRecorder">
+            <action name="Execute"><execute>simplescreenrecorder</execute></action>
+        </item
+    </menu>
+    <menu id="office" label="Office">
+        <item label="Libreoffice Writer">
+            <action name="Execute"><execute>libreoffice --writer</execute></action>
+        </item
+        <item label="Libreoffice Calc">
+            <action name="Execute"><execute>libreoffice --calc</execute></action>
+        </item
+        <item label="Libreoffice Impress">
+            <action name="Execute"><execute>libreoffice --impress</execute></action>
+        </item
+        <item label="Libreoffice Math">
+            <action name="Execute"><execute>libreoffice --math</execute></action>
+        </item
+        <item label="Libreoffice Draw">
+            <action name="Execute"><execute>libreoffice --draw</execute></action>
+        </item
+        <item label="Libreoffice Base">
+            <action name="Execute"><execute>libreoffice --base</execute></action>
+        </item
+        <item label="Atril">
+            <action name="Execute"><execute>atril</execute></action>
+        </item
+    </menu>
+    <menu id="pentest" label="Pentest">
+        <item label="BurpSuiteCommunity">
+            <action name="Execute"><execute>BurpSuiteCommunity</execute></action>
+        </item>
+        <item label="GoBuster">
+            <action name="Execute"><execute>urxvt -e sh -c 'gobuster -h; bash'</execute></action>
+        </item>
+        <item label="CherryTree">
+            <action name="Execute"><execute>flatpak run com.giuspen.cherrytree</execute></action>
+        </item>
+        <item label="">
+            <action name="Execute"><execute></execute></action>
+        </item>
+        <item label="">
+            <action name="Execute"><execute></execute></action>
+        </item>
+        <item label="">
+            <action name="Execute"><execute></execute></action>
+        </item>
+        <item label="">
+            <action name="Execute"><execute></execute></action>
+        </item>
+        <item label="">
+            <action name="Execute"><execute></execute></action>
+        </item>
+    </menu>
+    <menu id="system" label="System">
+        <menu id="openbox" label="Openbox">
+            <item label="ObConf">
+                <action name="Execute"><execute>obconf</execute></action>
+            </item>
+            <item label="Reconfigure">
+                <action name="Reconfigure" />
+            </item>
+        </menu>
+        <item label="Htop">
+            <action name="Execute"><execute>urxvt -e htop</execute></action>
+        </item
+        <item label="Gparted">
+            <action name="Execute"><execute>gparted</execute></action>
+        </item
+        <item label="Xrandr">
+            <action name="Execute"><execute>urxvt -e xrandr</execute></action>
+        </item
+        <item label="AlsaMixer">
+            <action name="Execute"><execute>urxvt -e alsamixer</execute></action>
+        </item
+        <item label="Printer">
+            <action name="Execute"><execute>system-config-printer</execute></action>
+        </item
+        <item label="Tint2">
+            <action name="Execute"><execute>tint2conf</execute></action>
+        </item
+        <item label="Lxappearance">
+            <action name="Execute"><execute>lxappearance</execute></action>
+        </item
+        <item label="Nvidia Settings">
+            <action name="Execute"><execute>nvidia-settings</execute></action>
+        </item
+    </menu>
+
+  <separator />
+    <menu id="exit" label="Exit">
+        <item label="Lock">
+            <action name="Execute"><execute>i3lock</execute></action>
+        </item>
+        <item label="Longoff">
+            <action name="Exit" />
+        </item>
+        <item label="Suspend">
+            <action name="Execute"><execute>systemctl suspend</execute></action>
+        </item>
+        <item label="Restart">
+            <action name="Execute"><execute>/sbin/shutdown -r now</execute></action>
+        </item>
+        <item label="Shutdown">
+            <action name="Execute"><execute>/sbin/shutdown -h now</execute></action>
+        </item>
+    </menu
+</menu>
+
+</openbox_menu>

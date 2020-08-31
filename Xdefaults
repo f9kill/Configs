@@ -1,40 +1,71 @@
 !------------------------------------------------------------------------------!
 ! Paleta de cores (Tango)                                                          !
 !------------------------------------------------------------------------------!
-URxvt*cursorColor:        #8ae234
+!*.cursorColor: #8ae234
 !! foreground color for underline
-URxvt*colorUL:            #8ae234
+!*.colorUL:     #8ae234
 !! line color for underline
-URxvt*underlineColor:     #92659a
-!! black dark/light
-URxvt*color0:             #2e3436
-URxvt*color8:             #6e706b
-!! red dark/light
-URxvt*color1:             #cc0000
-URxvt*color9:             #ef2929
-!! green dark/light
-URxvt*color2:             #4e9a06
-URxvt*color10:            #8ae234
-!! yellow dark/light
-URxvt*color3:             #edd400
-URxvt*color11:            #fce94f
-!! blue dark/light
-URxvt*color4:             #3465a4
-URxvt*color12:            #729fcf
-!! magenta dark/light
-URxvt*color5:             #92659a
-URxvt*color13:            #c19fbe
-!! cyan dark/light
-URxvt*color6:             #07c7ca
-URxvt*color14:            #63e9e9
-!! white dark/light
-URxvt*color7:             #d3d7cf
-URxvt*color15:            #eeeeec
+!*.underlineColor:     #92659a
+!!------- black -------
+!*.color0:      #2e3436
+!*.color8:      #6e706b
+!!------- red --------- 
+!*.color1:      #cc0000
+!*.color9:      #ef2929
+!!------- green -------
+!*.color2:      #4e9a06
+!*.color10:     #8ae234
+!!------- yellow ------
+!*.color3:      #edd400
+!*.color11:     #fce94f
+!!------- blue --------
+!*.color4:      #3465a4
+!*.color12:     #3465a4
+!!------- magenta -----
+!*.color5:      #92659a
+!*.color13:     #c19fbe
+!!------- cyan --------
+!*.color6:      #07c7ca
+!*.color14:     #63e9e9
+!!------- white -------
+!*.color7:      #d3d7cf
+!*.color15:     #eeeeec
+
+!------------------------------------------------------------------------------!
+! Paleta de cores (Monokai)
+!------------------------------------------------------------------------------!
+*.cursorColor:  #00AA00
+!------- black --------
+*.color0:       #272822
+*.color8:       #75715e
+!------- red ----------
+*.color1:       #f92672
+*.color9:       #ff0000
+!------- green --------
+*.color2:       #a6e22e
+*.color10:      #a6e22e
+!------- yellow -------
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+!------- blue ---------
+!*.color4:       #66d9ef
+*.color4:       #3465a4
+*.color12:      #729fcf
+!------- magenta ------
+*.color5:       #ae81ff
+*.color13:      #ae81ff
+!------- cyan ---------
+*.color6:       #a1efe4
+*.color14:      #a1efe4
+!------- white --------
+*.color7:       #f8f8f2
+*.color15:      #f9f8f5
+
 
 !------------------------------------------------------------------------------!
 ! Cor da fonte e fundo                                                         !
 !------------------------------------------------------------------------------!
-URxvt.foreground:      #ffffff
+URxvt.foreground:      #00FF00
 URxvt.background: [90]#000000
 URxvt.depth: 32
 
@@ -47,8 +78,8 @@ URxvt.depth: 32
 ! URxvt.font: xft:monospace:pixelsize=13:antialias=true:hinting=true
 ! URxvt.boldFont: xft:monospace:pixelsize=13:antialias=true:hinting=true
 !-------------------------------------------------------------------------------
- URxvt.font: xft:Hack Nerd Font Mono:pixelsize=13:antialias=true:hinting=true
- URxvt.boldFont: xft:Hack Nerd Font Mono:pixelsize=13:antialias=true:hinting=true
+ URxvt.font: xft:Hack-Regular:pixelsize=13:antialias=true:hinting=true
+ URxvt.boldFont: xft:Hack-Regular:bold:pixelsize=13:antialias=true:hinting=true
 !-------------------------------------------------------------------------------
 ! URxvt.font: xft:terminus:pixelsize=14:antialias=true:hinting=false
 ! URxvt.boldFont: xft:terminus:pixelsize=14:antialias=true:hinting=false
@@ -60,7 +91,7 @@ URxvt.depth: 32
 !------------------------------------------------------------------------------!
 ! Espaçamento entre linhas                                                     !
 !------------------------------------------------------------------------------!
-URxvt.lineSpace: 0
+URxvt.lineSpace: 1.2
 
 !------------------------------------------------------------------------------!
 ! Tamanho da janela                                                            !
@@ -81,4 +112,28 @@ URxvt.internalBorder:  10
 ! Configureções do cursor
 !------------------------------------------------------------------------------!
 URxvt.cursorBlink: true
-URxvt.cursorUnderline: true
+URxvt.cursorUnderline: false
+
+!------------------------------------------------------------------------------!
+! Configurar copiar, colar e outras ações.
+!------------------------------------------------------------------------------!
+!! Copy Paste & Other Extensions
+URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+URxvt.copyCommand: xclip -i -selection clipboard
+URxvt.pasteCommand: xclip -o -selection clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.urlLauncher: firefox
+URxvt.underlineURLs: true
+URxvt.urlButton: 1
+
+
+
+!------------------------------------------------------------------------------!
+! Referências
+!------------------------------------------------------------------------------!
+https://addy-dclxvi.github.io/post/configuring-urxvt/
