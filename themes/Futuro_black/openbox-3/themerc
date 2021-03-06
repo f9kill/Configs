@@ -1,0 +1,162 @@
+# Nome      : Futuro_black
+# Autor     : Hugo Torres <hugotorres@protonmail.com>
+# Licença   : BSD 2-clause 
+#
+# http://openbox.org/wiki/Help:Themes
+
+# ======================================================================
+#            MENU
+# ======================================================================
+
+# Tamanho da borda do menu
+menu.border.width:                              1
+# Cor da borda do menu
+menu.border.color:                              #999999
+
+# Titulo do menu
+menu.title.bg:                                  flat solid
+menu.title.bg.color:                            #AAAAAA
+menu.title.text.color:                          #000000
+menu.title.text.justify:                        center
+
+# Itens do menu
+menu.items.bg:                                  flat solid
+menu.items.bg.color:                            #000000
+menu.items.text.color:                          #FFFFFF
+menu.items.justify:                             center
+
+# Item do menu selecionado
+menu.items.active.bg:                           flat solid
+menu.items.active.bg.color:                     #FFFFFF
+menu.items.active.text.color:                   #000000
+
+# Setas do menu
+menu.bullet.image.color:                        #AAAAAA
+menu.bullet.selected.image.color:               #000000
+
+# Separador
+menu.separator.color:                           #FFFFFF
+menu.separator.width:                           1
+menu.separator.padding.width:                   2
+menu.separator.padding.height:                  4
+
+# ======================================================================
+#            JANELAS
+# ======================================================================
+
+# Cor da borda externa da janela
+window.active.border.color:                     #999999
+window.inactive.border.color:                   #555555
+# Tamanho da borda da externa janela
+border.Width:                                   1
+
+# Tamanho da borda inferior da janela
+window.handle.width:                            0
+# Cor da borda inferior da janela
+window.active.handle.bg:                        flat
+window.active.handle.bg.color:                  #000000
+window.inactive.handle.bg:                      flat
+window.inactive.handle.bg.color:                #000000
+# Cor dos cantos inferiores da janela
+window.active.grip.bg:                          flat
+window.active.grip.bg.color:                    #000000
+window.inactive.grip.bg:                        flat
+window.inactive.grip.bg.color:                  #000000
+
+# Tamanho da borda interno da janela
+window.client.padding.width:                    4
+window.client.padding.height:                   4
+# Cor da borda interna da janela
+window.active.client.color:                     #000000
+window.inactive.client.color:                   #000000
+
+# Tamanho da barra da titulo
+padding.height:                                 2
+# Espaçamento entre os botões
+padding.width:                                  5
+# Cor do separador da barra de titulo
+window.active.title.separator.color:            #000000
+window.inactive.title.separator.color:          #000000
+
+# Fundo da barra de titulo
+window.active.title.bg:                         flat
+window.active.title.bg.color:                   #000000
+window.inactive.title.bg:                       flat
+window.inactive.title.bg.color:                 #000000
+
+# Titulo da janela
+window.active.label.bg:                         flat
+window.active.label.bg.color:                   #000000
+window.active.label.text.color:                 #FFFFFF
+window.inactive.label.bg:                       flat
+window.inactive.label.bg.color:                 #000000
+window.inactive.label.text.color:               #555555
+window.label.text.justify:                      center
+
+
+# ======================================================================
+#            BOTÕES
+# ======================================================================
+
+# Botões não pressionados da janela com foco
+window.active.button.unpressed.bg:              flat solid
+window.active.button.unpressed.bg.color:        #000000
+window.active.button.unpressed.image.color:     #FFFFFF
+# Botões não pressionados da janela sem foco
+window.inactive.button.unpressed.bg:            flat solid
+window.inactive.button.unpressed.bg.color:      #000000
+window.inactive.button.unpressed.image.color:   #777777
+
+# Botão pressionado da janela com foco
+window.active.button.pressed.bg:                flat solid
+window.active.button.pressed.bg.color:          #FFFFFF
+window.active.button.pressed.image.color:       #000000
+# Botão pressionado da janela sem foco
+window.inactive.button.pressed.bg:              flat solid
+window.inactive.button.pressed.bg.color:        #000000
+window.inactive.button.pressed.image.color:     #FFFFFF
+
+# Botão acionado da janela em foco
+window.active.button.toggled.bg:                flat sold
+window.active.button.toggled.bg.color:          #FFFFFF
+window.active.button.toggled.image.color:       #000000
+# Botão acionado da janela sem foco
+window.inactive.button.toggled.bg:              flat solid
+window.inactive.button.toggled.bg.color:        #FFFFFF
+window.inactive.button.toggled.image.color:     #000000
+
+# Botão desativado da janela em foco
+window.active.button.disabled.bg:               flat solid
+window.active.button.disabled.bg.color:         #000000
+window.active.button.disabled.image.color:      #3C3B37
+# Botão desativado da janela sem foco
+window.inactive.button.disabled.bg:             flat solid
+window.inactive.button.disabled.bg.color:       #000000
+window.inactive.button.disabled.image.color:    #3C3B37
+
+# ======================================================================
+#            OSD
+# ======================================================================
+
+osd.border.width:                               2
+osd.border.color:                               #5B5B5B
+
+osd.bg:                                         flat solid
+osd.bg.color:                                   #000000
+osd.label.bg:                                   flat solid
+osd.label.bg.color:                             #5B5B5B
+osd.label.text.color:                           #FFFFFF
+
+osd.hilight.bg:                                 flat solid
+osd.hilight.bg.color:                           #5B5B5B
+
+osd.unhilight.bg:                               flat solid
+osd.unhilight.bg.color:                         #000000
+
+# ======================================================================
+#            FONTES
+# ======================================================================
+
+window.active.label.text.font:
+menu.title.text.font:
+menu.items.font:

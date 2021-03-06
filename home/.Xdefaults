@@ -1,0 +1,112 @@
+!------------------------------------------------------------------------------!
+! Paleta de cores (Monokai)
+!------------------------------------------------------------------------------!
+*.cursorColor:  #00AA00
+!------- black --------
+*.color0:       #272822
+*.color8:       #75715e
+!------- red ----------
+*.color1:       #f92672
+*.color9:       #ff0000
+!------- green --------
+*.color2:       #a6e22e
+*.color10:      #a6e22e
+!------- yellow -------
+*.color3:       #f4bf75
+*.color11:      #f4bf75
+!------- blue ---------
+*.color4:       #3465a4
+*.color12:      #729fcf
+!------- magenta ------
+*.color5:       #ae81ff
+*.color13:      #ae81ff
+!------- cyan ---------
+*.color6:       #a1efe4
+*.color14:      #a1efe4
+!------- white --------
+*.color7:       #f8f8f2
+*.color15:      #f9f8f5
+
+!------------------------------------------------------------------------------!
+! Cor da fonte e fundo                                                         !
+!------------------------------------------------------------------------------!
+URxvt.foreground:       #FFFFFF
+URxvt.background:  [90]#000000
+URxvt.depth: 32
+
+!------------------------------------------------------------------------------!
+! Fonte                                                                        !
+!------------------------------------------------------------------------------!
+URxvt.font: xft:Hack-Regular:pixelsize=13:antialias=true:hinting=true
+URxvt.boldFont: xft:Hack-Regular:bold:pixelsize=13:antialias=true:hinting=true
+URxvt.italicFont: xft:Hack-Regular:italic:pixelsize=13:antialias=true:hinting=true
+URxvt.boldItalicFont: xft:Hack-Regular:bold:italic:pixelsize=13:antialias=true:hinting=true
+
+! URxvt.font: xft:Terminus:pixelsize=16:antialias=true:hinting=true
+! URxvt.boldFont: xft:Terminus:bold:pixelsize=16:antialias=true:hinting=true
+! URxvt.italicFont: xft:Terminus:italic:pixelsize=16:antialias=true:hinting=true
+! URxvt.boldItalicFont: xft:Terminus:bold:italic:pixelsize=16:antialias=true:hinting=true
+
+!------------------------------------------------------------------------------!
+! Número de linhas salvas no buffer
+!------------------------------------------------------------------------------!
+URxvt.savelines: 30000
+
+!------------------------------------------------------------------------------!
+! Especifica o nome do tipo de terminal na variável de ambiente TERM
+!------------------------------------------------------------------------------!
+URxvt.termName: screen-256color
+
+!------------------------------------------------------------------------------!
+! Desfoca quando a janela perder o foco
+!------------------------------------------------------------------------------!
+URxvt.fading: 0
+
+!------------------------------------------------------------------------------!
+! Espaçamento entre linhas                                                     !
+!------------------------------------------------------------------------------!
+URxvt.lineSpace: 1.2
+
+!------------------------------------------------------------------------------!
+! Tamanho da janela                                                            !
+!------------------------------------------------------------------------------!
+URxvt.geometry: 90x18
+
+!------------------------------------------------------------------------------!
+! Barra de rolagem                                                             !
+!------------------------------------------------------------------------------!
+URxvt.scrollBar: false
+
+!------------------------------------------------------------------------------!
+! Margem interna                                                               !
+!------------------------------------------------------------------------------!
+URxvt.internalBorder:  10
+
+!------------------------------------------------------------------------------!
+! Configureções do cursor
+!------------------------------------------------------------------------------!
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: false
+
+!------------------------------------------------------------------------------!
+! Configurar copiar, colar e outras ações.
+!------------------------------------------------------------------------------!
+ URxvt.perl-ext-common: default,clipboard,url-select,keyboard-select
+ URxvt.copyCommand: xclip -i -selection clipboard
+ URxvt.pasteCommand: xclip -o -selection clipboard
+ URxvt.keysym.M-c: perl:clipboard:copy
+ URxvt.keysym.M-v: perl:clipboard:paste
+! URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+! URxvt.keysym.M-Escape: perl:keyboard-select:activate
+! URxvt.keysym.M-s: perl:keyboard-select:search
+! URxvt.keysym.M-u: perl:url-select:select_next
+! URxvt.urlLauncher: firefox
+! URxvt.underlineURLs: true
+! URxvt.urlButton: 1
+
+
+
+!------------------------------------------------------------------------------!
+! Referências
+!------------------------------------------------------------------------------!
+https://addy-dclxvi.github.io/post/configuring-urxvt/
